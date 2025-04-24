@@ -1,8 +1,7 @@
 import { createBrowserRouter } from "react-router";
 
-// import App from '../App.jsx';
-import AboutView from "../views/AboutView/index.jsx";
 import HomeView from "../views/HomeView/index.jsx";
+import AboutView from "../views/AboutView/index.jsx";
 
 const router = createBrowserRouter([
   // {
@@ -11,11 +10,11 @@ const router = createBrowserRouter([
   // },
   {
     path: "/",
-    Component: AboutView,
+    Component: HomeView,
   },
   {
-    path: "/HomeView",
-    Component: HomeView,
+    path: "/AboutView",
+    Component: AboutView,
   },
 ]);
 

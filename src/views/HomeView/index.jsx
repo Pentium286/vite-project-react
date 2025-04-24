@@ -2,17 +2,14 @@ import { useState } from 'react';
 import reactLogo from '../../assets/react.svg';
 import viteLogo from '/vite.svg';
 import "./index.less";
-import { NavLink } from "react-router";
+import Navigation from "../../components/navigation/index";
 
 const HomeView = () => {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <nav>
-        <NavLink className="nav" to="/">Home</NavLink>
-        <NavLink className="nav" to="/HomeView">About</NavLink>
-      </nav>
+      <Navigation />
       <div>HomeView</div>
       <div>
         <a href="https://vite.dev" target="_blank">
