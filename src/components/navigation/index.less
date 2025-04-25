@@ -1,3 +1,18 @@
 .nav {
-  margin: 0 8px;
+  display: inline-block;
+  padding: 0 1rem;
+  border-left: 1px solid rgba(84, 84, 84, 0.48);
+  margin-bottom: 16px;
+
+  &.active {
+    color: rgba(235, 235, 235, 0.64);
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  &:first-of-type {
+    border: 0;
+  }
 }
