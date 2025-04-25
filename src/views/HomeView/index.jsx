@@ -6,6 +6,7 @@ const HomeView = () => {
   return (
     <>
       <Navigation />
+      <div>HomeView</div>
       <Outlet />
     </>
   );
