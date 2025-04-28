@@ -3,12 +3,12 @@ import reactLogo from '../../assets/react.svg';
 import viteLogo from '/vite.svg';
 import "./index.less";
 
-const HomeViewDetail = () => {
+const HomeView = () => {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <div>HomeView Detail</div>
+      <div>HomeView</div>
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -33,4 +33,4 @@ const HomeViewDetail = () => {
   );
 };
 
-export default HomeViewDetail;
+export default HomeView;
