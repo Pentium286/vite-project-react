@@ -11,10 +11,6 @@ const Navigation = () => {
   } = theme.useToken();
 
   return (
-    // <nav>
-    //   <NavLink className="nav" to="/">Home</NavLink>
-    //   <NavLink className="nav" to="/AboutView">About</NavLink>
-    // </nav>
     <Sider width={200} style={{ background: colorBgContainer }}>
       <Menu
         mode="inline"
