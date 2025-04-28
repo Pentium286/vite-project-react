@@ -1,9 +1,9 @@
 import { createBrowserRouter } from "react-router";
 
-import HomeView from "../views/HomeView/index.jsx";
-import HomeViewDetail from "../views/HomeView/Detail/index.jsx";
-import AboutView from "../views/AboutView/index.jsx";
-import AboutViewDetail from "../views/AboutView/Detail/index.jsx";
+import HomeView from "../pages/HomeView/index.jsx";
+import HomeViewDetail from "../pages/HomeView/Detail/index.jsx";
+import AboutView from "../pages/AboutView/index.jsx";
+import AboutViewDetail from "../pages/AboutView/Detail/index.jsx";
 
 const router = createBrowserRouter([
   {
