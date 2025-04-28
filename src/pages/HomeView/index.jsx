@@ -8,9 +8,7 @@ const HomeView = () => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    return () => {
-      init();
-    };
+    init();
   }, []);
 
   const init = async () => {
