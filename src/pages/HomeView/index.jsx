@@ -1,10 +1,26 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import reactLogo from '@/assets/react.svg';
 import viteLogo from '/vite.svg';
 import "./index.less";
+import http from '@/api/http';
 
 const HomeView = () => {
   const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    return () => {
+      init();
+    };
+  }, []);
+
+  const init = async () => {
+    let params = {
+      clientType: "CUSTOMER",
+      id: 51041484,
+    };
+    const res = await http.get('/api/aiwo-plat-authserver/secretFreeToken/getToken', params, {});
+    console.log("init", res.data);
+  };
 
   return (
     <>

@@ -4,10 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build": "npm run build:prod",
+    "build:dev": "vite build --mode development",
+    "build:pre": "vite build --mode pre",
+    "build:prod": "vite build --mode production",
+    "start": "npm run start:dev",
+    "start:dev": "vite --host --mode development",
+    "start:pre": "vite --host --mode pre",
+    "start:prod": "vite --host --mode production"
   },
   "dependencies": {
     "@ant-design/pro-components": "^2.8.7",
