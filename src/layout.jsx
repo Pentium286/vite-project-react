@@ -18,7 +18,6 @@ const LayoutPage = () => {
         <Menu
           theme="dark"
           mode="horizontal"
-          defaultSelectedKeys={['2']}
           items={[
             {
               key: 1,
