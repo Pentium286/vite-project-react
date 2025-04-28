@@ -1,10 +1,10 @@
 import { createBrowserRouter } from "react-router";
 
-import Login from "./pages/Login/index.jsx";
-import Layout from "./layout.jsx";
+import Login from "@/pages/Login/index.jsx";
+import Layout from "@/layout.jsx";
 
-import HomeView from "./pages/HomeView/index.jsx";
-import AboutView from "./pages/AboutView/index.jsx";
+import HomeView from "@/pages/HomeView/index.jsx";
+import AboutView from "@/pages/AboutView/index.jsx";
 
 const router = createBrowserRouter([
   {
