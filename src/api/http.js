@@ -66,4 +66,35 @@ export default {
         });
     });
   },
+
+  upload(url, file, tips = {}, extra = {}) {
+    const formData = new FormData();
+    formData.append('file', file);
+    return new Promise((resolve, reject) => {
+      let config = {
+        method: 'post',
+        url,
+        data: formData,
+        headers: { 'Content-Type': 'multipart/form-data' },
+      };
+      config = extra ? Object.assign(config, extra) : config;
+      request(config)
+        .then((res) => {
+          if (res.success) {
+            if (tips.successTip) {
+              message.success(tips.successTip);
+            }
+            resolve(res);
+          } else if (tips.errorTip || res.message) {
+            message.error(tips.errorTip || res.message);
+            resolve(res);
+          } else {
+            resolve(res);
+          }
+        })
+        .catch((err) => {
+          reject(err);
+        });
+    });
+  },
 };

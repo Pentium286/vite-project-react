@@ -1,6 +1,7 @@
 import {
   ChromeFilled,
   CrownFilled,
+  FileExcelOutlined,
   SmileFilled,
   TabletFilled,
 } from '@ant-design/icons';
@@ -86,6 +87,12 @@ export default {
             component: './Welcome',
           },
         ],
+      },
+      {
+        path: '/excel-upload',
+        name: 'Excel上传',
+        icon: <FileExcelOutlined />,
+        component: './ExcelUpload',
       },
       {
         path: 'https://ant.design',
