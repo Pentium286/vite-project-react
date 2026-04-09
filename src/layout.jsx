@@ -26,6 +26,7 @@ import {
   theme,
 } from 'antd';
 import React, { useState } from 'react';
+import { Outlet, useNavigate } from 'react-router';
 import defaultProps from './_defaultProps';
 
 const Item = (props) => {
@@ -260,6 +261,7 @@ const SearchInput = () => {
 };
 
 export default () => {
+  const navigate = useNavigate();
   const [settings, setSetting] = useState({
     fixSiderbar: true,
     layout: 'mix',
@@ -392,6 +394,7 @@ export default () => {
               <div
                 onClick={() => {
                   setPathname(item.path || '/welcome');
+                  navigate(item.path || '/welcome');
                 }}
               >
                 {dom}
@@ -426,11 +429,10 @@ export default () => {
             >
               <ProCard
                 style={{
-                  height: '200vh',
                   minHeight: 800,
                 }}
               >
-                <div />
+                <Outlet />
               </ProCard>
             </PageContainer>
 

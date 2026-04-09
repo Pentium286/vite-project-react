@@ -5,6 +5,7 @@ import Layout from "@/layout.jsx";
 
 import HomeView from "@/pages/HomeView/index.jsx";
 import AboutView from "@/pages/AboutView/index.jsx";
+import ExcelToJson from "@/pages/ExcelToJson/index.jsx";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
       // { path: "/HomeView", Component: HomeView },
       { index: true, Component: HomeView },
       { path: "/AboutView", Component: AboutView },
+      { path: "/excel-to-json", Component: ExcelToJson },
     ],
   },
   {

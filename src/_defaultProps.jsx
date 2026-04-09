@@ -1,6 +1,7 @@
 import {
   ChromeFilled,
   CrownFilled,
+  FileExcelOutlined,
   SmileFilled,
   TabletFilled,
 } from '@ant-design/icons';
@@ -91,6 +92,11 @@ export default {
         path: 'https://ant.design',
         name: 'Ant Design 官网外链',
         icon: <ChromeFilled />,
+      },
+      {
+        path: '/excel-to-json',
+        name: 'Excel 转 JSON',
+        icon: <FileExcelOutlined />,
       },
     ],
   },
